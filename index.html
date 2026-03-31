@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hex's Recipe Book | Home</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<div class="container topbar">
+			<h1 class="logo">Hex's Recipe Book</h1>
+			<nav aria-label="Main navigation">
+				<ul>
+					<li><a href="one-pot-maggi.html">One-Pot Maggi</a></li>
+					<li><a href="egg-fried-rice.html">Egg Fried Rice</a></li>
+					<li><a href="bread-pizza.html">Bread Pizza</a></li>
+					<li><a href="peanut-noodle-bowl.html">Peanut Noodle Bowl</a></li>
+					<li><a href="mug-cake.html">Mug Cake</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="hero" aria-labelledby="hero-heading">
+			<h2 id="hero-heading">Cook Smart, Fast, and Hostel-Friendly</h2>
+			<p>
+				Simple meals made for hostel life: low budget, minimal utensils, and ingredients from nearby stores.
+			</p>
+			<form class="search-area" role="search" aria-label="Hostel-friendly recipe search" action="#">
+				<input
+					type="search"
+					name="search"
+					placeholder="Search hostel-friendly meals..."
+					aria-label="Search hostel-friendly recipes"
+				>
+				<button type="button" aria-label="Search">Search</button>
+			</form>
+		</section>
+
+		<section aria-labelledby="featured-recipes">
+			<h2 class="section-title" id="featured-recipes">Featured Hostel-Friendly Recipes</h2>
+			<div class="recipes-grid">
+				<article class="recipe-card">
+					<img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=80" alt="Plate of creamy pasta with vegetables">
+					<div class="recipe-content">
+						<h3>One-Pot Garlic Noodles</h3>
+						<p>Made in one pan with instant noodles, garlic, and chili flakes in under 15 minutes.</p>
+						<span class="tag">One Pot</span>
+					</div>
+				</article>
+
+				<article class="recipe-card">
+					<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=80" alt="Colorful grain bowl with avocado and vegetables">
+					<div class="recipe-content">
+						<h3>Hostel Veg Rice Bowl</h3>
+						<p>Use leftover rice, mixed veggies, and simple sauces for a quick, filling meal.</p>
+						<span class="tag">Budget Meal</span>
+					</div>
+				</article>
+
+				<article class="recipe-card">
+					<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Dessert served with berries and sauce">
+					<div class="recipe-content">
+						<h3>2-Minute Mug Cake</h3>
+						<p>No oven needed. Mix, microwave, and enjoy a fast dessert between study breaks.</p>
+						<span class="tag">No Oven</span>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container footer-inner">
+			<p>&copy; 2026 | Hex's Recipe Book. Built for student in hostels.</p>
+		</div>
+	</footer>
+</body>
+</html>
