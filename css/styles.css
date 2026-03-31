@@ -55,6 +55,18 @@ nav a:hover, .search-area button:hover {
 	margin: 14px 0;
 }
 
+.recipe-card-link {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card-link:hover .recipe-card {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transform: translateY(-2px);
+}
+
 .recipe-card {
 	background: #ffffff;
 	border: 1px solid #e5e7eb;
