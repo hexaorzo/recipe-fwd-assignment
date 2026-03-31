@@ -1,0 +1,86 @@
+* { box-sizing: border-box; }
+
+body {
+	margin: 0;
+	font-family: "Segoe UI", Arial, sans-serif;
+	line-height: 1.5;
+	color: #1f2937;
+	background: #f8fafc;
+}
+
+.container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+header, footer { background: #ffffff; border-bottom: 1px solid #e5e7eb; }
+footer { border-top: 1px solid #e5e7eb; margin-top: 24px; }
+
+.topbar, .footer-inner, nav ul, .search-area {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.topbar, .footer-inner { justify-content: space-between; padding: 12px 0; }
+nav ul { margin: 0; padding: 0; list-style: none; }
+
+.logo, .section-title, .hero h2 { margin: 0; }
+.hero { text-align: center; padding: 28px 0 16px; }
+.hero p { color: #4b5563; margin: 10px auto 14px; max-width: 680px; }
+
+nav a {
+	text-decoration: none;
+	color: #1f2937;
+	padding: 6px 8px;
+	border-radius: 4px;
+}
+
+nav a:hover, .search-area button:hover {
+	background: #e2e8f0;
+}
+
+.search-area { max-width: 620px; margin: 0 auto; }
+.search-area input, .search-area button {
+	padding: 10px;
+	border: 1px solid #cbd5e1;
+	border-radius: 4px;
+	font: inherit;
+}
+
+.search-area input { flex: 1; min-width: 220px; }
+.search-area button { cursor: pointer; background: #ffffff; }
+
+.recipes-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 14px;
+	margin: 14px 0;
+}
+
+.recipe-card {
+	background: #ffffff;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.recipe-card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+.recipe-content { padding: 12px; }
+.recipe-content h3 { margin: 0 0 8px; font-size: 1.05rem; }
+.recipe-content p { margin: 0; color: #4b5563; }
+
+.tag {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 2px 8px;
+	border: 1px solid #cbd5e1;
+	border-radius: 999px;
+	font-size: 0.8rem;
+}
+
+@media (max-width: 760px) {
+	.recipes-grid { grid-template-columns: repeat(2, 1fr); }
+	.search-area { flex-direction: column; align-items: stretch; }
+}
+
+@media (max-width: 520px) {
+	.recipes-grid { grid-template-columns: 1fr; }
+}
